@@ -6,6 +6,191 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phan Trọng Hậu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <style name='reset-css'>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+        
+        body {
+            line-height: 1;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+        }
+        
+        blockquote,
+        q {
+            quotes: none;
+        }
+        
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+    </style>
+    <style name='my-css'>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .wrapper {
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+        
+        .flex-box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .header {
+            padding: 10px 0;
+        }
+        
+        .header-right,
+        .header-left {
+            width: 20%;
+        }
+        
+        .search {
+            display: flex;
+            border: 1px solid rgb(77, 77, 77);
+            border-radius: 5px;
+            padding: 2px;
+        }
+        
+        .search>button {
+            outline: none;
+            border: 0;
+            background-color: transparent;
+        }
+        
+        .search>input {
+            outline: none;
+            border: 0;
+            padding: 7px;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,16 +198,57 @@
         <header class="header">
             <div class="container">
                 <div class="flex-box">
-                    <div class="flex-item">left</div>
-                    <div class="flex-item">logo</div>
-                    <div class="flex-item">right</div>
+                    <div class="flex-item header-right">
+                        <div class="flex-box">
+                            <div class="flex-item">
+                                <a href="#shop">Shop</a>
+                            </div>
+                            <div class="flex-item"><a href="#shop">Offers</a></div>
+                            <div class="flex-item"><a href="#shop">Our story</a></div>
+                            <div class="flex-item">
+                                <a href="#shop">Blogs</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="flex-item">
+                        <img src="./image/logo.png" alt="logo">
+                    </div>
+                    <div class="flex-item header-left">
+                        <div class="flex-box">
+                            <div class="flex-item ">
+                                <div class="search">
+                                    <button>
+                                        <img style="width: 15px" src="./image/search.png" alt="">
+                                    </button>
+                                    <input type="text" placeholder="Search product...">
+                                </div>
+
+                            </div>
+                            <div class="flex-item">
+                                <a href="#Card">
+                                    <img src="./image/Card.png" alt="Card">
+                                </a>
+                            </div>
+                            <div class="flex-item">
+                                <a href="#MyAccount">
+                                    <img src="./image/MyAccount.png" alt="MyAccount">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
         <main class="main">
-            <section class="section">
+            <section class="banner">
                 <div class="container">
-
+                    <h1>
+                        Lorem ipsum dolor sit
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, iusto. Dolor tenetur eos officiis doloremque. Modi repellendus odit ratione doloremque?
+                    </p>
                 </div>
             </section>
             <section class="section">
