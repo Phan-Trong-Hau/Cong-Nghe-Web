@@ -153,13 +153,13 @@
         }
         
         .container {
-            width: 90%;
+            width: 80%;
             margin: auto;
         }
         
         .flex-box {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
         }
         
@@ -189,6 +189,32 @@
             outline: none;
             border: 0;
             padding: 7px;
+        }
+        
+        .banner {
+            position: relative;
+            background: url('./image/banner.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 60vh;
+        }
+        
+        .banner-content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .banner-title {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 4rem;
+        }
+        
+        .banner-description {
+            width: 60%;
+            line-height: 23px;
         }
     </style>
 </head>
@@ -243,12 +269,14 @@
         <main class="main">
             <section class="banner">
                 <div class="container">
-                    <h1>
-                        Lorem ipsum dolor sit
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, iusto. Dolor tenetur eos officiis doloremque. Modi repellendus odit ratione doloremque?
-                    </p>
+                    <div class="banner-content">
+                        <h1 class="banner-title">
+                            Lorem ipsum dolor sit
+                        </h1>
+                        <p class="banner-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae facilis, minima provident magni animi perferendis!
+                        </p>
+                    </div>
                 </div>
             </section>
             <section class="section">
