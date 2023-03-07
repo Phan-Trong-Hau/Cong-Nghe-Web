@@ -216,6 +216,55 @@
             width: 60%;
             line-height: 23px;
         }
+        
+        .product-nav {
+            padding: 80px 0;
+        }
+        
+        .nav-right,
+        .nav-left {
+            display: flex;
+        }
+        
+        .nav-item>button {
+            outline: none;
+            border: 0;
+            color: rgb(3, 97, 58);
+            background-color: transparent;
+            padding: 15px 50px;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        
+        .nav-item>.active {
+            background-color: rgb(3, 97, 58);
+            color: white;
+        }
+        
+        .line-between {
+            position: relative;
+        }
+        
+        .line-between::after {
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 20px;
+            background-color: rgba(3, 97, 58, 0.404);
+            top: 30%;
+        }
+        
+        #select-sort {
+            padding: 8px;
+            border-radius: 5px;
+            background-color: rgba(184, 184, 184, 0.562);
+            border: 0;
+            outline: none;
+        }
+        
+        .nav-left>.nav-item {
+            margin-left: 20px;
+        }
     </style>
 </head>
 
@@ -279,9 +328,47 @@
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="product-nav">
                 <div class="container">
+                    <div class="flex-box">
+                        <div class="flex-item nav-right">
+                            <nav class="nav-item">
+                                <button class="active">
+                                    All Products
+                                </button>
+                            </nav>
+                            <nav class="nav-item line-between">
+                                <button>
+                                    Face
+                                </button>
+                            </nav>
+                            <nav class="nav-item">
+                                <button>
+                                    Body
+                                </button>
+                            </nav>
+                        </div>
+                        <div class="flex-item nav-left">
+                            <nav class="nav-item">
+                                <div class="search">
+                                    <button>
+            <img style="width: 15px" src="./image/search.png" alt="">
+        </button>
+                                    <input type="text" placeholder="Search product...">
+                                </div>
 
+                            </nav>
+                            <nav class="nav-item">
+                                <select name="select-sort" id="select-sort">
+                                    <option value="0">Sort by</option>
+                                    <option value="1">Price</option>
+                                    <option value="2">Name</option>
+                                    <option value="3">Best-seller</option>
+                                    <option value="4">New</option>
+                                </select>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="section">
