@@ -59,8 +59,43 @@
     justify-content: space-between;
     align-items: center;
 }
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
 .title h3 {
     font-size: 30px;
     margin: 0;
+}
+
+.time,
+.time div,
+.time button {
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-item {
+    position: relative;
+}
+
+.user-item img {
+    position: relative;
+}
+
+.user-box {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 10px;
+    left: 3%;
+    width: 94%;
 }
