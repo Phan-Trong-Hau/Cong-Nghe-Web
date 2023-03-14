@@ -76,7 +76,7 @@
     font-size: 30px;
     margin: 0;
 }
-
+.chat,
 .time,
 .time div,
 .time button {
@@ -120,4 +120,30 @@
 
 .box-chat {
     border-top: 1px solid black;
+}
+
+.user-chat {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 7px;
+    margin-left: 50px;
+}
+
+.chat {
+    padding: 10px 0;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.chat button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
 }
