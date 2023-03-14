@@ -12,6 +12,8 @@
 #center {
     width: 910px;
     background-color: bisque;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 #right {
@@ -59,6 +61,10 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.content {
+    padding-top: 30px;
+}
 .flex-center {
     display: flex;
     justify-content: center;
@@ -78,7 +84,8 @@
     align-items: center;
 }
 
-.flex {
+.flex,
+.user {
     display: flex;
     justify-content: space-between;
 }
@@ -98,4 +105,19 @@
     top: 10px;
     left: 3%;
     width: 94%;
+}
+
+.user {
+    padding: 10px 0;
+}
+
+.user-info,
+.user-action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-chat {
+    border-top: 1px solid black;
 }
