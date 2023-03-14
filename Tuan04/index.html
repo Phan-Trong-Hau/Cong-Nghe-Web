@@ -1,91 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #wrapper {
+                display: flex;
+                justify-content: center;
+            }
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #wrapper {
-            display: flex;
-            justify-content: center;
-        }
-        
-        #container {
-            display: flex;
-            justify-content: space-between;
-            width: 1440px;
-        }
-        
-        #center {
-            width: 910px;
-            background-color: bisque;
-        }
-        
-        #right {
-            width: 440px;
-            background-color: aqua;
-        }
-        
-        #left {
-            width: 90px;
-            height: 870px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        
-        #left_above {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        #below {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .item {
-            width: 32px;
-            margin-top: 50px;
-        }
-        
-        #setting {
-            margin-top: 36px;
-        }
-    </style>
-</head>
+            #container {
+                display: flex;
+                justify-content: space-between;
+                width: 1440px;
+            }
 
-<body>
-    <div id="wrapper">
-        <div id="container">
-            <div id="left">
-                <div id="left_above">
-                    <img class="item" src="./image/logo.png" alt="">
-                    <img class="item" src="./image/home.png" alt="">
-                    <img class="item" src="./image/cam.png" alt="">
-                    <img class="item" src="./image/chatting.png" alt="">
-                    <img class="item" src="./image/user.png" alt="">
+            #center {
+                width: 910px;
+                background-color: bisque;
+            }
+
+            #right {
+                width: 440px;
+                background-color: aqua;
+            }
+
+            #left {
+                width: 90px;
+                height: 870px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            #left_above {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #below {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .item {
+                width: 32px;
+                margin-top: 50px;
+            }
+
+            #setting {
+                margin-top: 36px;
+            }
+
+            .box {
+                padding: 35px;
+            }
+
+            .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .title h3 {
+                font-size: 30px;
+                margin: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="container">
+                <div id="left">
+                    <div id="left_above">
+                        <img class="item" src="./image/logo.png" alt="" />
+                        <img class="item" src="./image/home.png" alt="" />
+                        <img class="item" src="./image/cam.png" alt="" />
+                        <img class="item" src="./image/chatting.png" alt="" />
+                        <img class="item" src="./image/user.png" alt="" />
+                    </div>
+
+                    <div id="below">
+                        <img src="./image/avatar.png" width="44" alt="" />
+                        <img
+                            id="setting"
+                            src="./image/setting.png"
+                            width="44"
+                            alt=""
+                        />
+                    </div>
                 </div>
-
-                <div id="below">
-                    <img src="./image/avatar.png" width="44" alt="">
-                    <img id="setting" src="./image/setting.png" width="44" alt="">
+                <div id="center">
+                    <div class="box">
+                        <div class="title">
+                            <h3>Meeting title</h3>
+                            <div><span>12:00</span></div>
+                        </div>
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div id="right">
+                    <div class="box">
+                        <div class="title">
+                            <h3>Participants <span>4</span></h3>
+                            <div><button>+ Add</button></div>
+                        </div>
+                        <div class="content"></div>
+                    </div>
+                    <div class="box">
+                        <div class="title">
+                            <h3>Chat</h3>
+                        </div>
+                        <div class="content"></div>
+                    </div>
                 </div>
             </div>
-            <div id="center">center</div>
-            <div id="right">right</div>
-
         </div>
-
-
-    </div>
-
-</body>
-
+    </body>
 </html>
